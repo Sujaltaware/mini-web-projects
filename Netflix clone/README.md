@@ -15,5 +15,9 @@ This project is a **responsive UI clone of Netflix**, built purely with **HTML a
 ---
 
 ## Project Structure
-
+Netflix clone/ 
+├── index.html # Main HTML file containing the UI structure 
+├── style.css # CSS file for styling and layout 
+├── assets/ # Folder containing images, icons, and other media files 
+└── README.md # Documentation describing the project
 
