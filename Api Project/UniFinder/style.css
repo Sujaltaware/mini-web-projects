@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background: #1e88e5;
+    color: white;
+    width: 100%;
+    padding: 25px 10px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-box {
+    margin: 40px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+input {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 250px;
+    outline: none;
+}
+
+button {
+    padding: 12px 20px;
+    background: #1e88e5;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #1565c0;
+}
+
+#list {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+.college-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.college-card {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.college-card:hover {
+  transform: scale(1.02);
+}
+
+.college-card h3 {
+  margin: 0 0 8px;
+  color: #2c3e50;
+}
+
+.college-card a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.college-card a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+    input {
+        width: 90%;
+    }
+
+    .search-box {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.loader {
+  border: 6px solid #f3f3f3; /* Light grey background */
+  border-top: 6px solid #1e88e5; /* Blue spinner */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 40px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

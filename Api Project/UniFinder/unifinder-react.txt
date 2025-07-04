@@ -1,0 +1,26 @@
+unifinder-react/
+│
+├── public/
+│   ├── index.html           # The main HTML file (React injects here)
+│   └── favicon.ico          # Site icon (optional)
+│
+├── src/
+│   ├── assets/              # Images, icons, fonts (if any)
+│   ├── components/          # Reusable UI components (Loader, CollegeCard, etc.)
+│   │   ├── Loader.jsx
+│   │   ├── CollegeCard.jsx
+│   │   └── ...
+│   ├── pages/               # Page-level components (if you want to scale)
+│   │   └── UniFinder.jsx    # Main UniFinder page component
+│   ├── App.jsx              # Root React component
+│   ├── index.js             # Entry point: renders App.jsx to DOM
+│   ├── styles/              # CSS or styled-components files
+│   │   ├── App.css
+│   │   └── Loader.css
+│   └── utils/               # Utility functions (optional, e.g., API calls)
+│       └── api.js
+│
+├── .gitignore               # Git ignore file
+├── package.json             # Project config and dependencies
+├── README.md                # Project overview and instructions
+└── yarn.lock / package-lock.json  # Package lock files
