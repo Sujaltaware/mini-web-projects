@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>COVID-19 Tracker</title>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🦠 COVID-19 Tracker</h1>
+    <button id="darkModeToggle">🌓</button>
+  </header>
+
+  <section class="stats-cards">
+    <div class="card">
+      <h3>Total Cases</h3>
+      <div class="counter" id="totalCases">0</div>
+    </div>
+    <div class="card">
+      <h3>Recovered</h3>
+      <div class="counter" id="recovered">0</div>
+    </div>
+    <div class="card">
+      <h3>Deaths</h3>
+      <div class="counter" id="deaths">0</div>
+    </div>
+  </section>
+
+  <section class="country-select">
+    <label for="countryDropdown">🌍 Select Country:</label>
+    <select id="countryDropdown">
+      <option value="global">Global</option>
+    </select>
+  </section>
+
+  <section class="chart-section">
+    <h2 style="text-align:center;">📈 Global 30-Day Trend</h2>
+    <canvas id="casesChart"></canvas>
+  </section>
+
+  <footer>
+    <p>Data from disease.sh API | Built by [Sujal Taware] ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
