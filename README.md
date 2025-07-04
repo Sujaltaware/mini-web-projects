@@ -3,7 +3,6 @@ A collection of my mini web development projects using HTML, CSS, JavaScript, an
 
 ## Projects
 - Netflix Clone UI (HTML & CSS)
-- Spotify Clone UI
 - University Finder API Project
 - Random color Generator
 
