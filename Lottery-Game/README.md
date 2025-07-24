@@ -6,12 +6,6 @@ This project demonstrates the use of **React hooks**, **random number logic**, *
 
 ---
 
-## 📸 Screenshots
-
-![Lottery Game Screenshot](./Lottery-Game UI.png)
-
----
-
 ## 🧠 How to Play
 
 1. Click the **"Generate"** button.
